@@ -1,4 +1,5 @@
-# Work Day Scheduler (Events Calendar)
+# Server-Side APIs Challenge: Weather Dashboard
+
 ## Description
 
 This project is an application that an employee can use to generate a random password based on criteria they’ve selected.

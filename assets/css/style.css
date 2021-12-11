@@ -918,7 +918,7 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50;
+  background-image: linear-gradient(to right, blue , green);
 }
 
 .bg-info {
@@ -971,6 +971,7 @@ a:hover {
 }
 
 .btn {
+  width: 100%;
   text-align: center;
   display: inline-block;
   padding: 0.5rem 1.2rem;
@@ -1028,12 +1029,12 @@ a:hover {
 }
 
 .btn.btn-info {
-  background-color: #1bbc9b;
+  background-color: #00a2ff;
   color: #ffffff;
 }
 
 .btn.btn-info:hover {
-  background-color: #31e1bd;
+  background-color: #88cff8;
 }
 
 .btn.btn-light {
@@ -1088,8 +1089,6 @@ a:hover {
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
-  color: #d9e9e8;
 }
 
 .card .card-body {
@@ -1293,6 +1292,38 @@ label form [type='radio'] {
   flex: 0 0 100%;
   max-width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* col-sm */
 @media screen and (min-width: 640px) {
@@ -1891,4 +1922,10 @@ label form [type='radio'] {
   .align-center-xl {
     align-items: center;
   }
+}
+
+.search-history {
+  border-top-style: solid;
+  border-width: 0.2vw;
+  color: #504e4e;
 }

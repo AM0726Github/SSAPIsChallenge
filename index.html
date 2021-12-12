@@ -21,7 +21,7 @@
         <section class="flex-column m-1">
           <h1>Search for a City:</h1>
           <form class="">
-            <input type="text" class="form-input w-100" id="shopping-input" name="shopping-input" placeholder="Enter City name" />
+            <input id="enter-city" type="text" class="form-input w-100" id="shopping-input" name="shopping-input" placeholder="Enter City name" />
             <button class="btn btn-info">Search</button>
           </form>
           <div class="search-history mt-1">
@@ -29,45 +29,30 @@
           </div>
         </section>
 
-        <!-- <section>
+        <section>
           <div class="flex-column">
-            <h1> <span>name</span> <span>(date)</span><img src="" alt=""></h1>
-            <ul></ul>
+            <h3 id="city-name" class="city-name"></h3>
+            <img id="current-pic" alt="sky" src="">
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+            <p id="UV-index"></p>
           </div>
-          <div class="flex-column">
+
+
+          <div class="flex-column" id="five-day">
             <div>
-              <h2>5-Day Forecast:</h2>
+              <h3>5-Day Forecast:</h3>
             </div>
             <div class="flex-row">
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
+              <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+              <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+              <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+              <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+              <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
             </div>
           </div>
-        </section> -->
-
+        </section>
       </div>
     </main>
     <script src="./assets/js/script.js"></script>

@@ -10,66 +10,58 @@
     <title>SSAPIs/Weather Dashboard</title>
   </head>
 
-  <body class="min-100-vh flex-column bg-white">
-    <header class="p-5 text-center text-white bg-primary">
+  <body class="bg-white">
+    <header class="container-fluid text-center text-white p-2 bg-primary">
       <h1>Weather Dashboard</h1>
     </header>
 
-    <main class="flex-row">
-      <div class="flex-row">
+    <main class="container-fluid">
+
+      <div class="row">
         
-        <section class="flex-column m-1">
-          <h1>Search for a City:</h1>
-          <form class="">
-            <input type="text" class="form-input w-100" id="shopping-input" name="shopping-input" placeholder="Enter City name" />
-            <button class="btn btn-info">Search</button>
+        <section class="col-lg-3">
+          <h2>Search for a City:</h2>
+          <form class="Search-form">
+            <input id="enter-city" type="text" class="form-input w-100" id="searching-input" name="searching-input" placeholder="Enter City name" />
+            <button class="btn btn-info" type="button" id="search-button">Search</button>
           </form>
-          <div class="search-history mt-1">
-            <button type="button" class="btn btn-dark mt-1" disabled>Button</button>
+          <div class="search-history mt-1" id="history">
           </div>
         </section>
 
-        <!-- <section>
-          <div class="flex-column">
-            <h1> <span>name</span> <span>(date)</span><img src="" alt=""></h1>
-            <ul></ul>
-          </div>
-          <div class="flex-column">
-            <div>
-              <h2>5-Day Forecast:</h2>
-            </div>
-            <div class="flex-row">
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
-              <section class="flex-column">
-                <h3>date</h3>
-                <img>
-                <ul></ul>
-              </section>
+        <section class="col-lg-9">
+          
+          <div class="row mr-0">
+            <div class="col-lg-11 card m-3 d-none" id="today-weather">
+              <div class="card-body">
+                <h3 id="city-name" class="city-name"></h3>
+                <img id="current-pic" alt="sky" src="">
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+                <p id="UV-index"></p>
+              </div>
             </div>
           </div>
-        </section> -->
 
+          <div class="row d-none" id="fiveday-header">
+            <div class="col-12">
+              <h3>5-Day Forecast:</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+            <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+            <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+            <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+            <div class="col-md-2 forecast bg-primary text-white m-2 rounded"></div>
+          </div>
+
+        </section>
       </div>
     </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

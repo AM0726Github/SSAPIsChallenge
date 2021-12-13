@@ -19,7 +19,7 @@ By clicking search button user can search weather and save sity by name showen o
 
 ## Screenshot of Web page
 
-![Web page](./assets/images/WebPageCapture.jpg)
+![Web page](.assets/Images/WebPageCapture.JPG)
 
 ## References and tutorials utilized
 

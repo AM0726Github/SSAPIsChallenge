@@ -12,11 +12,11 @@ function initPage() {
   var todayweatherEl = document.getElementById("today-weather");
   let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 
-  // Assigning an API to a constant
+  // Assigning an individual API ke to a constant
   const APIKey = "6439e5d4a0c95a78102ba239e4f61ffa";
 
   function getWeather(cityName) {
-    // Execute a current weather get request from open weather api
+    //get request from open weather api
     let queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIKey;
     axios.get(queryURL)
         .then(function (response) {
@@ -105,20 +105,17 @@ searchEl.addEventListener("click", function () {
     localStorage.setItem("search", JSON.stringify(searchHistory));
     renderSearchHistory();
 
-    
-    
-
-    for (let i = 0; i < searchHistory.length; i++) {
-      if(searchTerm === searchHistory[i] || searchTerm === ""){
-        searchHistory.pop();
-        break;
-      } else {
-        getWeather(searchTerm);
-        searchHistory.unshift(searchTerm);
-        localStorage.setItem("search", JSON.stringify(searchHistory));
-        renderSearchHistory();
-      }
-    }
+    // for (let i = 0; i < searchHistory.length; i++) {
+    //   if(searchTerm === searchHistory[i] || searchTerm === ""){
+    //     searchHistory.pop();
+    //     break;
+    //   } else {
+    //     getWeather(searchTerm);
+    //     searchHistory.unshift(searchTerm);
+    //     localStorage.setItem("search", JSON.stringify(searchHistory));
+    //     renderSearchHistory();
+    //   }
+    // }
 })
 
 function k2f(K) {

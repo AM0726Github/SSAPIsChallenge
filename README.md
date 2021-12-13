@@ -2,29 +2,31 @@
 
 ## Description
 
-This project is an application that an employee can use to generate a random password based on criteria they’ve selected.
-The password can include special characters(https://owasp.org/www-community/password-special-characters).  
+This project is an application that user can use to search city by name and see weather outlook.
+By clicking search button user can search weather and save sity by name showen on page by button.  
 
 ## Tasks completed
 
 * Was structured git hub repository with deployed result web page.
-* Was reconstructed local start point code and files structure. 
+* Was constructed web page by mock-up and project solved by using tird party free for using API caled Open Weather https://openweathermap.org/api. 
 * Was aded functionality to web page by accepted citeria.
 
 ## Links
 
-* deployed website https://am0726github.github.io/Events-Calendar/
+* deployed website https://am0726github.github.io/SSAPIsChallenge/
 
-* Code repository https://github.com/AM0726Github/Events-Calendar
+* Code repository https://github.com/AM0726Github/SSAPIsChallenge
 
 ## Screenshot of Web page
 
-![Web page](./assets/images-demo/05-third-party-apis-homework-demo.gif)
+![Web page](./assets/images/WebPageCapture.JPG)
 
 ## References and tutorials utilized
 
 * https://stackoverflow.com
 * https://www.w3schools.com/js
-* https://momentjs.com
-* https://fontawesome.com
+* https://api.jquery.com/category/css/
+* https://getbootstrap.com/
+* https://developer.mozilla.org/
+* https://alligator.io/js/push-pop-shift-unshift-array-methods/
 * https://learn.jquery.com/using-jquery-core/document-ready/

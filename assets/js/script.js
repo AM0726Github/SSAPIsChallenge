@@ -13,7 +13,8 @@ function initPage() {
   let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
 
   // Assigning an individual API ke to a constant
-  const APIKey = "6439e5d4a0c95a78102ba239e4f61ffa";
+  //const APIKey = "6439e5d4a0c95a78102ba239e4f61ffa";
+  const APIKey = "84b79da5e5d7c92085660485702f4ce8";
 
   function getWeather(cityName) {
     //get request from open weather api

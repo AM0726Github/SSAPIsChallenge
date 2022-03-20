@@ -9,28 +9,30 @@
      crossorigin="anonymous">
     <title>SSAPIs/Weather Dashboard</title>
   </head>
-
   <body class="bg-white">
+    <!-- Section Header -->
     <header class="container-fluid text-center text-white p-2 bg-primary">
       <h1>Weather Dashboard</h1>
     </header>
-
+    <!-- Section Main -->
     <main class="container-fluid">
 
       <div class="row">
-        
+        <!-- Section Search and History -->
         <section class="col-lg-3">
           <h2>Search for a City:</h2>
+          <!-- Search -->
           <form class="Search-form">
             <input id="enter-city" type="text" class="form-input w-100" id="searching-input" name="searching-input" placeholder="Enter City name" />
             <button class="btn btn-info" type="button" id="search-button">Search</button>
           </form>
+          <!-- History -->
           <div class="search-history mt-1" id="history">
           </div>
         </section>
-
+        <!-- Section Search Result and Forecast -->
         <section class="col-lg-9">
-          
+          <!-- Search Result Weather Section -->
           <div class="row mr-0">
             <div class="col-lg-11 card m-3 d-none" id="today-weather">
               <div class="card-body">
@@ -43,7 +45,7 @@
               </div>
             </div>
           </div>
-
+          <!-- Result Weather Forecast -->
           <div class="row d-none" id="fiveday-header">
             <div class="col-12">
               <h3>5-Day Forecast:</h3>

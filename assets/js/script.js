@@ -120,14 +120,16 @@ CityButtonElement.addEventListener("click", SearchButtonHandler);
 // Get Search History from local Storage
 var GetSearchHistory = () => {
     var History = JSON.parse(localStorage.getItem("CityHistory"));
-    SearchHistory = History;
-    History.forEach((h) => {
-    var aEl = document.createElement("a");
-    aEl.classList = "list-group-item btn btn-info";
-    aEl.innerHTML = h;
-    aEl.href = `?city=${h}`;
-    CityHistoryElement.appendChild(aEl);
-  });
+    if(History) {
+      SearchHistory = History;
+      History.forEach((h) => {
+        var aEl = document.createElement("a");
+        aEl.classList = "list-group-item btn btn-info";
+        aEl.innerHTML = h;
+        aEl.href = `?city=${h}`;
+        CityHistoryElement.appendChild(aEl);
+      });
+    }; 
 };
 
 NavigationToSearch();
